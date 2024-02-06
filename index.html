@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Homepage</title>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex justify-center content-center m-5 font-bold text-center">
+      <p id="message" class="text-center text-xl"> !</p>
+      <br />
+    </div>
+    <div class="flex justify-center content-center">
+      <button
+        onclick="tailThe()"
+        id="tebakButton"
+        class="bg-blue-200 p-2 border border-black rounded-md shadow-xl hover:bg-blue-300 text-md"
+      >
+        Tebak Angka!
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
